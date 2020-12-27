@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ログイン</title>
+
+    <%- include("./_share/style.ejs") %>
+</head>
+
+<body>
+<%- include("./_share/nav.ejs") %>
+<main role="main" class="container">
+    <div class="row justify-content-center align-items-center" style="height: 600px">
+        <div class="col-4">
+            <form method="post">
+                <h2>Login</h2>
+
+                <div class="form-group mt-4">
+                    <input type="email" class="form-control" placeholder="Email Address" name="email"
+                            required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" name="password"
+                            required="required">
+                </div>
+                <div class="form-group mt-4">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary btn-md">Login</button>
+                        </div>
+                        <div class="col-8">
+                                <a href="register">Forgot Your Password?</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</main>
+
+<%- include("./_share/js.ejs") %>
+</body>
+</html>
