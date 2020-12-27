@@ -3,9 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>ログイン</title>
-
+    <title>登録</title>
     <%- include("./_share/style.ejs") %>
 </head>
 
@@ -14,10 +12,10 @@
 <main role="main" class="container">
     <div class="row justify-content-center align-items-center" style="height: 600px">
         <div class="col-4">
-            <form method="post">
+            <form method="post" action="/register">
                 <h2>Register</h2>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Username" name="username" required="required">
+                    <input type="text" class="form-control" placeholder="Username" name="userName" required="required">
                 </div>
                 <div class="form-group">
                     <input type="email" class="form-control" placeholder="Email Address" name="email"
@@ -28,7 +26,7 @@
                             required="required">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password"
+                    <input type="password" class="form-control" placeholder="Confirm Password" name="confirmPassword"
                             required="required">
                 </div>
                 <div class="form-group">
@@ -37,11 +35,10 @@
             </form>
             <div class="text-center">
                 Already have an account?
-                <a href="/">Login here</a>
+                <a href="/login">Login here</a>
             </div>
         </div>
     </div>
-
 </main>
 
 <%- include("./_share/js.ejs") %>
