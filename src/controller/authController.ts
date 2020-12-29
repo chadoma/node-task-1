@@ -18,7 +18,7 @@ class AuthController {
             const hashPassword = bcrypt.hashSync(password, 12);
             const isLogin = true;
 
-            const user = <UserInfo>{id, userName, email, hashPassword, isLogin};
+            const user: UserInfo = {id, userName, email, hashPassword, isLogin};
             res.render('home', {user});
         } else {
             console.log('error');
